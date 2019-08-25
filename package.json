@@ -1,0 +1,29 @@
+{
+  "name": "react-front-back-example",
+  "version": "1.0.0",
+  "description": "Example of an application that shows how to run a front end (React) server and back end (express) from one command",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaosZeroFive/react-front-back-example.git"
+  },
+  "author": "Alton <chaos.five.zero@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaosZeroFive/react-front-back-example/issues"
+  },
+  "homepage": "https://github.com/chaosZeroFive/react-front-back-example#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.1"
+  }
+}
